@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#798DFA</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#7195FA</color>
+    <color name="home_bottom_txt">#777777</color>
+    <color name="home_bottom_txt_selected">#7195FA</color>
+    <color name="home_bottom_background">#FFFFFF</color>
+    <color name="card_background">#FEFEFE</color>
+    <color name="card_name_txt">#555555</color>
+    <color name="card_disappear">#999999</color>
+    <color name="card_title">#333333</color>
+    <color name="card_reward">#777777</color>
+    <color name="card_tag">#7195FA</color>
+    <color name="card_photo_link">#7097FB</color>
+    <color name="tab_line">#6898FF</color>
+    <color name="question_title">#FEFEFE</color>
+    <color name="startcolor">#798DFA</color>
+    <color name="endcolor">#58B1FC</color>
+    <color name="character">#ffff</color>
+</resources>

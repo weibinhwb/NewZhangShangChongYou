@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_gradinet"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/askquestion_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/askquestionback"
+                />
+
+            <TextView
+                android:id="@+id/askquestion_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="@string/askquestion"
+                android:layout_gravity="center"
+                android:textColor="@color/question_title"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/askquestion_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginEnd="15dp"
+                android:textColor="@color/question_title"
+                android:textSize="18sp"
+                android:text="@string/askquestionnext"/>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <EditText
+            android:id="@+id/askquestion_edit_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/input_hint_edit_title"
+            android:gravity="top"
+            android:textSize="16sp"
+            android:textColorHint="@color/card_disappear"
+            />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="280dp">
+        <EditText
+            android:id="@+id/askquesstion_edit_question"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/input_hint_edit_question"
+            android:textSize="16sp"
+            android:gravity="top"
+            android:textColorHint="@color/card_disappear"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="190dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="126dp"
+            android:layout_margin="17dp">
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="109dp"
+                android:background="@drawable/askquestion_add_photo"/>
+            <Button
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="109dp"
+                android:background="@drawable/askquestion_add_photo"/>
+            <Button
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="109dp"
+                android:background="@drawable/askquestion_add_photo"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+</LinearLayout>

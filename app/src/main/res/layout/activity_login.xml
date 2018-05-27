@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/login_back"
+                android:background="@drawable/askquestionback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_marginStart="17dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:gravity="center"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="62dp"
+            />
+        <android.support.v7.widget.CardView
+            android:layout_width="323dp"
+            android:layout_height="255dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="42dp"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="32dp">
+                <EditText
+                    android:id="@+id/login_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_login_account"/>
+                <EditText
+                    android:id="@+id/login_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_login_password"
+                    android:inputType="textPassword"
+                    android:layout_marginTop="35dp"/>
+
+                <Button
+                    android:id="@+id/login_button"
+                    android:layout_width="279dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="35dp"
+                    android:text="@string/login"
+                    android:background="@drawable/shape_gradinet"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+</LinearLayout>
