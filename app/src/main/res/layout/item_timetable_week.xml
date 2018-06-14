@@ -5,38 +5,74 @@
     android:layout_height="49dp"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView
+        android:id="@+id/course_rank"
+        android:layout_width="31dp"
+        android:layout_height="match_parent"
+        android:background="@color/course_rank_color"
+        android:gravity="center"
+        />
+    <TextView
         android:id="@+id/first"
         android:layout_width="0dp"
+        android:gravity="center"
         android:layout_weight="1"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:background="@color/course_rank_color"
+        android:textColor="@color/course_week_color"
+        android:textSize="12sp"
+        />
     <TextView
         android:id="@+id/second"
         android:layout_width="0dp"
+        android:gravity="center"
         android:layout_weight="1"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:background="@color/course_rank_color"
+        android:textColor="@color/course_week_color"
+        android:textSize="12sp"/>
     <TextView
         android:id="@+id/third"
         android:layout_width="0dp"
+        android:gravity="center"
         android:layout_weight="1"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:background="@color/course_rank_color"
+        android:textColor="@color/course_week_color"
+        android:textSize="12sp"/>
     <TextView
         android:id="@+id/fouth"
         android:layout_width="0dp"
+        android:gravity="center"
         android:layout_weight="1"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:background="@color/course_rank_color"
+        android:textColor="@color/course_week_color"
+        android:textSize="12sp"/>
     <TextView
         android:id="@+id/fifth"
         android:layout_width="0dp"
+        android:gravity="center"
         android:layout_weight="1"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:background="@color/course_rank_color"
+        android:textColor="@color/course_week_color"
+        android:textSize="12sp"/>
     <TextView
         android:id="@+id/sixth"
         android:layout_width="0dp"
+        android:gravity="center"
         android:layout_weight="1"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:background="@color/course_rank_color"
+        android:textColor="@color/course_week_color"
+        android:textSize="12sp"/>
     <TextView
         android:id="@+id/seventh"
+        android:gravity="center"
         android:layout_width="0dp"
         android:layout_weight="1"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:background="@color/course_rank_color"
+        android:textColor="@color/course_week_color"
+        android:textSize="12sp"/>
 </LinearLayout>

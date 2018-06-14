@@ -1,5 +1,6 @@
 package com.example.weibinhuang.zhangshangchongyou_wb.imp.view;
 
+import com.example.weibinhuang.zhangshangchongyou_wb.bean.SortCourse;
 import com.example.weibinhuang.zhangshangchongyou_wb.bean.TimeTable;
 
 import java.util.List;
@@ -9,5 +10,5 @@ import java.util.List;
  */
 
 public interface ITimeTableView {
-    void showTimeTable(List<TimeTable.TimeTableDetail> list);
+    void showTimeTable(List<SortCourse> list);
 }

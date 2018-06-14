@@ -1,5 +1,6 @@
 package com.example.weibinhuang.zhangshangchongyou_wb.callbacklistener;
 
+import com.example.weibinhuang.zhangshangchongyou_wb.bean.SortCourse;
 import com.example.weibinhuang.zhangshangchongyou_wb.bean.TimeTable;
 import com.example.weibinhuang.zhangshangchongyou_wb.bean.Transaction;
 
@@ -13,7 +14,7 @@ import java.util.List;
 public interface TimeTablePartListener {
 
     interface GetTimeTableListener {
-        void getTimeTableSuccess(List<TimeTable.TimeTableDetail> list);
+        void getTimeTableSuccess(List<SortCourse> list);
         void getTimeTableFailed();
     }
 

@@ -5,103 +5,90 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <android.support.v7.widget.CardView
+    <TextView
+        android:id="@+id/course_rank"
+        android:layout_width="31dp"
+        android:layout_height="match_parent"
+        android:background="@color/course_rank_color"
+        android:gravity="center"
+        android:textColor="@color/course_week_color"
+        />
+
+    <TextView
+        android:id="@+id/monday"
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="match_parent"
-        app:cardCornerRadius="1dp"
-        >
-        <TextView
-            android:id="@+id/monday"
-            android:layout_margin="7dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textSize="12sp"
-            android:gravity="center"
-            android:text="@string/help"/>
-    </android.support.v7.widget.CardView>
-    <android.support.v7.widget.CardView
+        android:textSize="12sp"
+        android:gravity="center"
+        android:text="@string/help"
+        android:layout_margin="1dp"
+        android:textColor="@color/course_name_class_room_color"
+        />
+
+    <TextView
+        android:id="@+id/tuesday"
         android:layout_width="0dp"
         android:layout_weight="1"
-        app:cardCornerRadius="1dp"
-        android:layout_height="match_parent">
-        <TextView
-            android:id="@+id/tuesday"
-            android:layout_margin="7dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textSize="12sp"
-            android:gravity="center"
-            android:text="@string/help"/>
-    </android.support.v7.widget.CardView>
-    <android.support.v7.widget.CardView
+        android:layout_height="match_parent"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:text="@string/help"
+        android:layout_margin="1dp"
+        android:textColor="@color/course_name_class_room_color"/>
+
+    <TextView
+        android:id="@+id/wednesday"
         android:layout_width="0dp"
         android:layout_weight="1"
-        app:cardCornerRadius="1dp"
-        android:layout_height="match_parent">
-        <TextView
-            android:id="@+id/wednesday"
-            android:layout_margin="7dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textSize="12sp"
-            android:gravity="center"
-            android:text="@string/help"/>
-    </android.support.v7.widget.CardView>
-    <android.support.v7.widget.CardView
+        android:layout_height="match_parent"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:text="@string/help"
+        android:layout_margin="1dp"
+        android:textColor="@color/course_name_class_room_color"/>
+
+    <TextView
+        android:id="@+id/thursday"
         android:layout_width="0dp"
         android:layout_weight="1"
-        app:cardCornerRadius="1dp"
-        android:layout_height="match_parent">
-        <TextView
-            android:id="@+id/thursday"
-            android:layout_margin="7dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textSize="12sp"
-            android:gravity="center"
-            android:text="@string/help"/>
-    </android.support.v7.widget.CardView>
-    <android.support.v7.widget.CardView
+        android:layout_height="match_parent"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:text="@string/help"
+        android:layout_margin="1dp"
+        android:textColor="@color/course_name_class_room_color"/>
+
+    <TextView
+        android:id="@+id/friday"
         android:layout_width="0dp"
         android:layout_weight="1"
-        app:cardCornerRadius="1dp"
-        android:layout_height="match_parent">
-        <TextView
-            android:id="@+id/friday"
-            android:layout_margin="7dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textSize="12sp"
-            android:gravity="center"
-            android:text="@string/help"/>
-    </android.support.v7.widget.CardView>
-    <android.support.v7.widget.CardView
-        android:layout_width="0dp"
-        app:cardCornerRadius="1dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent">
-        <TextView
-            android:id="@+id/saturday"
-            android:layout_margin="7dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textSize="12sp"
-            android:gravity="center"
-            android:text="@string/help"/>
-    </android.support.v7.widget.CardView>
-    <android.support.v7.widget.CardView
+        android:layout_height="match_parent"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:text="@string/help"
+        android:layout_margin="1dp"
+        android:textColor="@color/course_name_class_room_color"/>
+
+    <TextView
+        android:id="@+id/saturday"
         android:layout_width="0dp"
         android:layout_weight="1"
-        app:cardCornerRadius="1dp"
-        android:layout_height="match_parent">
-        <TextView
-            android:id="@+id/sunday"
-            android:layout_margin="7dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textSize="12sp"
-            android:gravity="center"
-            android:text="@string/help"/>
-    </android.support.v7.widget.CardView>
+        android:layout_height="match_parent"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:text="@string/help"
+        android:layout_margin="1dp"
+        android:textColor="@color/course_name_class_room_color"/>
+
+    <TextView
+        android:id="@+id/sunday"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:text="@string/help"
+        android:layout_margin="1dp"
+        android:textColor="@color/course_name_class_room_color"/>
 </LinearLayout>

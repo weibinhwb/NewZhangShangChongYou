@@ -3,6 +3,7 @@ package com.example.weibinhuang.zhangshangchongyou_wb.presenter;
 import android.content.Context;
 import android.util.Log;
 
+import com.example.weibinhuang.zhangshangchongyou_wb.bean.SortCourse;
 import com.example.weibinhuang.zhangshangchongyou_wb.bean.TimeTable;
 import com.example.weibinhuang.zhangshangchongyou_wb.bean.Transaction;
 import com.example.weibinhuang.zhangshangchongyou_wb.bean.UserBrief;
@@ -35,9 +36,10 @@ public class TimeTablePresenter implements ItimetablePresenter, GetTimeTableList
 
 
     @Override
-    public void getTimeTableSuccess(List<TimeTable.TimeTableDetail> list) {
+    public void getTimeTableSuccess(List<SortCourse> list) {
         for (int i = 0; i < list.size(); i ++){
-            Log.d(TAG, list.get(i).getDay());
+            Log.d(TAG, list.get(i).getTeacher());
+            Log.d(TAG, list.get(i).getCurrentWeek() + "");
         }
         mITimeTableView.showTimeTable(list);
     }
@@ -49,10 +51,7 @@ public class TimeTablePresenter implements ItimetablePresenter, GetTimeTableList
 
     @Override
     public void getTransactionSuccess(List<Transaction.data> dataList) {
-        for (int i = 0; i < dataList.size(); i ++){
-            for (int j = 0; j < dataList.get(i).getDate().getWeek().size(); j ++)
-                Log.d(TAG, dataList.get(i).getDate().getWeek().get(j) + "");
-        }
+
     }
 
     @Override

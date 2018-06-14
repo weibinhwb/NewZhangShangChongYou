@@ -18,4 +18,10 @@
     <color name="startcolor">#798DFA</color>
     <color name="endcolor">#58B1FC</color>
     <color name="character">#ffff</color>
+    <color name="morning_course_color">#FF89A5</color>
+    <color name="afternoon_course_color">#FFBF7B</color>
+    <color name="evening_course_color">#81B6FE</color>
+    <color name="course_rank_color">#EEF6FD</color>
+    <color name="course_name_class_room_color">#ffffff</color>
+    <color name="course_week_color">#7097FA</color>
 </resources>

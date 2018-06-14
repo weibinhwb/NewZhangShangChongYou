@@ -6,6 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
+import com.example.weibinhuang.zhangshangchongyou_wb.bean.SortCourse;
 import com.example.weibinhuang.zhangshangchongyou_wb.bean.TimeTable;
 import com.example.weibinhuang.zhangshangchongyou_wb.bean.Transaction;
 import com.example.weibinhuang.zhangshangchongyou_wb.db.TimeTableBaseHelper;
@@ -45,14 +46,16 @@ public class TimeTableModel implements ItimetablePart{
     private DeleteTransactionListener mDeleteTransactionListener;
     private TimeTable timeTable;
 
+    public static int TOTALWEEKS;
     private List<TimeTable.TimeTableDetail> mTableDetailList = new ArrayList<>();
+    private List<SortCourse> mSortTableList = new ArrayList<>();
     private List<Transaction.data> mDataList = new ArrayList<>();
 
     private SQLiteDatabase mDatabase;
 
     @Override
     public void init(Context context) {
-        mDatabase = new TimeTableBaseHelper(context).getWritableDatabase();
+//        mDatabase = new TimeTableBaseHelper(context).getWritableDatabase();
         setTimeTableDetails();
     }
 
@@ -64,8 +67,7 @@ public class TimeTableModel implements ItimetablePart{
                 public void onFinish(String response) {
                     if (getStatus(response)){
                         parseTimeTableJson(response);
-                        mGetTimeTableListener.getTimeTableSuccess(mTableDetailList);
-//                        keepTimeTableDetails();
+                        mGetTimeTableListener.getTimeTableSuccess(mSortTableList);
                     }
                     Log.d(TAG, response);
                 }
@@ -119,6 +121,42 @@ public class TimeTableModel implements ItimetablePart{
             timeTable.mTableDetail.setWeek(list);
             mTableDetailList.add(timeTable.mTableDetail);
         }
+        SortTableList();
+    }
+
+    private void SortTableList(){
+        int totalWeek = 0;
+        for (int i = 0; i < mTableDetailList.size(); i ++){
+            TimeTable.TimeTableDetail detail = mTableDetailList.get(i);
+            for (int j = 0; j < detail.getWeek().size(); j ++){
+                int currentWeek = detail.getWeek().get(j);
+                if (totalWeek < currentWeek)
+                    totalWeek = currentWeek;
+            }
+        }
+        Log.d(TAG, "SortTableList: totalWeek" + totalWeek);
+        for (int i = 0; i < totalWeek; i ++){
+            for (int j = 0; j < mTableDetailList.size(); j ++){
+                TimeTable.TimeTableDetail detail = mTableDetailList.get(j);
+                for (int k = 0; k < detail.getWeek().size(); k ++){
+                    int currentWeek = detail.getWeek().get(k) - 1;
+                    if (currentWeek == i){
+                        SortCourse course = new SortCourse();
+                        course.setClassroom(detail.getClassroom());
+                        course.setCurrentWeek(i);
+                        course.setCourse(detail.getCourse());
+                        course.setLesson(detail.getLesson());
+                        course.setTeacher(detail.getTeacher());
+                        course.setBeginLesson(detail.getBeginLession());
+                        course.setDay(detail.getDay());
+                        course.setNowWeek(timeTable.getNowWeek());
+                        mSortTableList.add(course);
+                        break;
+                    }
+                }
+            }
+        }
+        TOTALWEEKS = totalWeek;
     }
 
     private void keepTimeTableDetails(){

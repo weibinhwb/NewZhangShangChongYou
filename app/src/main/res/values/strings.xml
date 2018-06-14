@@ -17,4 +17,5 @@
     <string name="login">登录</string>
     <string name="timetable_title">课表</string>
     <string name="help"> </string>
+    <string name="courseName_classRoom">%s\n\n%s</string>
 </resources>
