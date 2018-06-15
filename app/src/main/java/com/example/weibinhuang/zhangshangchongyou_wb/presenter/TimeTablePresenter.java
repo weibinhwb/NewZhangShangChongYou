@@ -37,10 +37,6 @@ public class TimeTablePresenter implements ItimetablePresenter, GetTimeTableList
 
     @Override
     public void getTimeTableSuccess(List<SortCourse> list) {
-        for (int i = 0; i < list.size(); i ++){
-            Log.d(TAG, list.get(i).getTeacher());
-            Log.d(TAG, list.get(i).getCurrentWeek() + "");
-        }
         mITimeTableView.showTimeTable(list);
     }
 

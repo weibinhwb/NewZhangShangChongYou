@@ -1,6 +1,6 @@
 package com.example.weibinhuang.zhangshangchongyou_wb.model;
 
-import com.example.weibinhuang.zhangshangchongyou_wb.api.QuestionPart;
+import com.example.weibinhuang.zhangshangchongyou_wb.imp.api.QuestionPart;
 import com.example.weibinhuang.zhangshangchongyou_wb.bean.Question;
 import com.example.weibinhuang.zhangshangchongyou_wb.bean.QuestionDetailedInfo;
 import com.example.weibinhuang.zhangshangchongyou_wb.imp.model.IquestionPart;

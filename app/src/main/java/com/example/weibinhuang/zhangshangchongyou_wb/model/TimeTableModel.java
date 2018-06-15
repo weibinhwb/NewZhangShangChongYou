@@ -9,7 +9,6 @@ import android.util.Log;
 import com.example.weibinhuang.zhangshangchongyou_wb.bean.SortCourse;
 import com.example.weibinhuang.zhangshangchongyou_wb.bean.TimeTable;
 import com.example.weibinhuang.zhangshangchongyou_wb.bean.Transaction;
-import com.example.weibinhuang.zhangshangchongyou_wb.db.TimeTableBaseHelper;
 import com.example.weibinhuang.zhangshangchongyou_wb.db.TimeTableCursorWrapper;
 import com.example.weibinhuang.zhangshangchongyou_wb.imp.model.ItimetablePart;
 import com.example.weibinhuang.zhangshangchongyou_wb.callbacklistener.CallbackListener;
@@ -22,10 +21,10 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.example.weibinhuang.zhangshangchongyou_wb.api.TimeTablePart.ADDTRANSACTION;
-import static com.example.weibinhuang.zhangshangchongyou_wb.api.TimeTablePart.DELETETRANSACTION;
-import static com.example.weibinhuang.zhangshangchongyou_wb.api.TimeTablePart.GETRANSACTION;
-import static com.example.weibinhuang.zhangshangchongyou_wb.api.TimeTablePart.KEBIAO;
+import static com.example.weibinhuang.zhangshangchongyou_wb.imp.api.TimeTablePart.ADDTRANSACTION;
+import static com.example.weibinhuang.zhangshangchongyou_wb.imp.api.TimeTablePart.DELETETRANSACTION;
+import static com.example.weibinhuang.zhangshangchongyou_wb.imp.api.TimeTablePart.GETRANSACTION;
+import static com.example.weibinhuang.zhangshangchongyou_wb.imp.api.TimeTablePart.KEBIAO;
 import static com.example.weibinhuang.zhangshangchongyou_wb.callbacklistener.TimeTablePartListener.*;
 import static com.example.weibinhuang.zhangshangchongyou_wb.db.TimeTableSchema.*;
 import static com.example.weibinhuang.zhangshangchongyou_wb.db.TimeTableSchema.PersonTimeTable.*;
@@ -46,7 +45,6 @@ public class TimeTableModel implements ItimetablePart{
     private DeleteTransactionListener mDeleteTransactionListener;
     private TimeTable timeTable;
 
-    public static int TOTALWEEKS;
     private List<TimeTable.TimeTableDetail> mTableDetailList = new ArrayList<>();
     private List<SortCourse> mSortTableList = new ArrayList<>();
     private List<Transaction.data> mDataList = new ArrayList<>();
@@ -156,7 +154,6 @@ public class TimeTableModel implements ItimetablePart{
                 }
             }
         }
-        TOTALWEEKS = totalWeek;
     }
 
     private void keepTimeTableDetails(){

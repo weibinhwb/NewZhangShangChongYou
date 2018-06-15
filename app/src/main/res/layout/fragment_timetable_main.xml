@@ -6,6 +6,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     >
 
     <android.support.design.widget.AppBarLayout
@@ -14,41 +15,49 @@
 
         <android.support.v7.widget.Toolbar
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/shape_gradinet">
+            android:layout_height="80dp"
+            android:background="@drawable/shape_gradinet"
+            android:paddingTop="25dp">
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <TextView
                     android:id="@+id/timetable_title"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:layout_weight="1"
-                    android:text="@string/timetable_title"
-                    android:layout_gravity="center"
                     android:textColor="@color/question_title"
                     android:textSize="18sp"
+                    android:drawableEnd="@drawable/hide_weeks"
+                    android:layout_centerInParent="true"
                     />
 
                 <ImageView
+                    android:layout_centerInParent="true"
                     android:id="@+id/timetable_add"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:background="@drawable/timetable_add"
-                    android:layout_marginEnd="16dp"/>
-            </LinearLayout>
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="18dp"
+                    />
+            </RelativeLayout>
         </android.support.v7.widget.Toolbar>
 
     </android.support.design.widget.AppBarLayout>
-    <TableLayout
+    <android.support.design.widget.TabLayout
         android:id="@+id/timetable_tablayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </TableLayout>
+        android:layout_height="41dp"
+        app:tabMode="scrollable"
+        app:tabTextColor="@color/week_tablayout"
+        app:tabSelectedTextColor="@color/course_week_color"
+        android:background="@color/character"
+        >
+    </android.support.design.widget.TabLayout>
     <android.support.v4.view.ViewPager
         android:id="@+id/timetable_viewpager"
         android:layout_width="match_parent"

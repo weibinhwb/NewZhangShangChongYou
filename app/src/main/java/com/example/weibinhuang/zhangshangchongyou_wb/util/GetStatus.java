@@ -2,7 +2,7 @@ package com.example.weibinhuang.zhangshangchongyou_wb.util;
 
 import org.json.JSONObject;
 
-import static com.example.weibinhuang.zhangshangchongyou_wb.api.UsersPart.OK;
+import static com.example.weibinhuang.zhangshangchongyou_wb.imp.api.UsersPart.OK;
 
 /**
  * Created by weibinhuang on 18-5-26.

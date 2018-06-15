@@ -7,12 +7,12 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 import com.example.weibinhuang.zhangshangchongyou_wb.R;
 import com.example.weibinhuang.zhangshangchongyou_wb.view.frag.MainQuestionFragment;
 import com.example.weibinhuang.zhangshangchongyou_wb.view.frag.MainTimeTableFragment;
-import com.example.weibinhuang.zhangshangchongyou_wb.view.frag.TimeTableFragment;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
         initView();

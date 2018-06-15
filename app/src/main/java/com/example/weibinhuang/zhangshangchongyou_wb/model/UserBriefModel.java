@@ -8,8 +8,8 @@ import com.example.weibinhuang.zhangshangchongyou_wb.util.HttpUtil;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import static com.example.weibinhuang.zhangshangchongyou_wb.api.UsersPart.OK;
-import static com.example.weibinhuang.zhangshangchongyou_wb.api.UsersPart.VERIFY;
+import static com.example.weibinhuang.zhangshangchongyou_wb.imp.api.UsersPart.OK;
+import static com.example.weibinhuang.zhangshangchongyou_wb.imp.api.UsersPart.VERIFY;
 
 /**
  *
